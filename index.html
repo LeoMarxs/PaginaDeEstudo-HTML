@@ -36,6 +36,38 @@
             border-radius: 5px;
             overflow-x: auto;
         }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #5a67d8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #434ac3;
+        }
     </style>
 </head>
 <body>
@@ -75,34 +107,25 @@
         </ol>
         <h3>Lista Não Ordenada</h3>
         <ul>
-            <li>Item A</li>
-            <li>Item B</li>
-            <li>Item C</li>
+            <li>Primeiro item</li>
+            <li>Segundo item</li>
+            <li>Terceiro item</li>
         </ul>
     </section>
 
     <section>
-        <h2>Links e Citações</h2>
-        <p>Você pode adicionar um link usando a tag <code>&lt;a&gt;</code>:</p>
-        <p><a href="https://www.dio.me/users/leonardomarquesj2004">Visite o Meu Perfil DIO</a></p>
-        <p><a href="https://github.com/LeoMarxs">Visite o Meu GitHUb</a></p>
-        <p><a href="https://www.linkedin.com/in/leonardohmarques/">Visite o Meu Linkedin</a></p>
-        <hr>
-        <p>Para citar alguém, você pode usar a tag <code>&lt;blockquote&gt;</code>:</p>
-        <blockquote cite="https://www.exemplo.com">
-            "Esta é uma citação de exemplo usando a tag <code>&lt;blockquote&gt;</code>."
-        </blockquote>
+        <h2>Formulário de Exemplo</h2>
+        <p>Preencha o campo abaixo e envie:</p>
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome">
+            <input type="submit" value="Enviar">
+        </form>
     </section>
 
     <section>
-        <h2>Subscrito e Sobrescrito</h2>
-        <p>Use <code>&lt;sub&gt;</code> para texto subscrito e <code>&lt;sup&gt;</code> para texto sobrescrito:</p>
-        <p>Fórmula química da água: H<sub>2</sub>O</p>
-        <p>Valor ao quadrado: X<sup>2</sup></p>
+        <h2>Imagem de Exemplo</h2>
+        <img src="https://via.placeholder.com/600x400" alt="Imagem de exemplo">
     </section>
-
-    <footer>
-        <p>Continue praticando HTML para se tornar um especialista! Este guia incluiu as principais tags para você começar.</p>
-    </footer>
 </body>
 </html>
